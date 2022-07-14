@@ -5,11 +5,9 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
 	const { data: session } = useSession();
 	if (session) {
-		console.log("session", session);
-
 		return (
 			<>
-				Signed in as {session?.user?.name} <br />
+				Signed in as {session!.user!.email} <br />
 				<Button onClick={() => signOut()}>Sign out</Button>
 			</>
 		);
@@ -17,8 +15,8 @@ const Home: NextPage = () => {
 
 	return (
 		<div className="bg-slate-800">
-			<div className="flex flex-col h-screen items-center justify-center">
-				<h1 className="text-white">Not Signed In RN!</h1> <br />
+			<div className="flex h-screen items-center justify-center">
+				<h1>Not Signed In RN!</h1>
 				<Button onClick={() => signIn()}>Sign In</Button>
 			</div>
 		</div>

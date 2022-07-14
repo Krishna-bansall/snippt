@@ -9,7 +9,7 @@ const Home: NextPage = () => {
 
 		return (
 			<>
-				Signed in as {session?.user?.name} <br />
+				Signed in as {session!.user!.email} <br />
 				<Button onClick={() => signOut()}>Sign out</Button>
 			</>
 		);
