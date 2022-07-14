@@ -3,9 +3,9 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
 	return (
-		<div className="bg-slate-800">
-			<div className="flex h-screen items-center justify-center">
-				<Button>Get Started!</Button>
+		<div className="h-screen w-screen bg-black">
+			<div className="flex justify-center">
+				<Button className="flex">Get Started!</Button>
 			</div>
 		</div>
 	);
