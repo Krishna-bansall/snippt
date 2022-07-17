@@ -1,4 +1,4 @@
-#Steps to Use
+# Steps to Use
 1. Fork & Clone
 2. cd into  `web/` 
     + `yarn add package.json`
